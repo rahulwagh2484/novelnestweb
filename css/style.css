@@ -10770,46 +10770,40 @@ h5,
 }
 
 .wrap .bg-wrap {
-    background: #3a2e5e;
-    background: #413c69;
+    background: linear-gradient(135deg, #004d40, #00c853);
     padding: 0;
     position: relative;
     z-index: 0;
 }
 
+
+/* LEFT DIAMOND */
+
 .wrap .bg-wrap:after {
     position: absolute;
-    top: 0;
-    left: -40px;
+    top: 0px;
+    left: -20px;
     content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 40px 40px;
-    border-color: transparent transparent #413c69 transparent;
+    width: 40px;
+    height: 40px;
+    background: #004d40;
+    transform: rotate(45deg);
     z-index: -1;
 }
+
+
+/* RIGHT DIAMOND */
 
 .wrap .bg-wrap:before {
     position: absolute;
-    top: 0;
-    right: -40px;
+    top: 0px;
+    right: -20px;
     content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 40px 40px 0 0;
-    border-color: #413c69 transparent transparent transparent;
+    width: 40px;
+    height: 40px;
+    background: #00c853;
+    transform: rotate(45deg);
     z-index: -1;
-}
-
-@media (max-width: 991.98px) {
-    .wrap .bg-wrap:before {
-        right: -39px;
-    }
-    .wrap .bg-wrap:after {
-        right: -39px;
-    }
 }
 
 @media (max-width: 767.98px) {
@@ -11141,7 +11135,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 {
-    height: 400px;
+    height: 300px;
 }
 
 .hero-wrap.hero-wrap-2 .overlay {
@@ -11150,7 +11144,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
-    height: 400px;
+    height: 300px;
 }
 
 .hero-wrap.hero-wrap-2 .slider-text h1 {
