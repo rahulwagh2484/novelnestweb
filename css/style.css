@@ -95,6 +95,10 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
+.plist {
+    text-align: justify;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -598,7 +602,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1200px;
     }
 }
 
@@ -4728,6 +4732,10 @@ input[type="button"].btn-block {
 .navbar-nav .dropdown-menu {
     position: static;
     float: none;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .navbar-text {
