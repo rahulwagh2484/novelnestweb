@@ -869,3 +869,66 @@
     color: #ffffff;
     background-color: var(--thm-primary);
 }
+
+
+/* Card Base for hygiegs.html*/
+
+.nutrition-card {
+    padding: 25px 15px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.nutrition-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Highlight Card */
+
+.highlight-card {
+    border: 2px solid #28a745;
+}
+
+
+/* Icon Circle */
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 22px;
+}
+
+
+/* Text */
+
+.nutrition-card h6 {
+    font-weight: 600;
+}
+
+.nutrition-card p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+/* Mobile Optimization */
+
+@media (max-width: 576px) {
+    .nutrition-card {
+        padding: 20px 10px;
+    }
+}
